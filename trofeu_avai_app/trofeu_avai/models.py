@@ -25,11 +25,18 @@ class Jogador(models.Model):
     GOLEIRO = 0
     LATERAL_DIREITO = 1
     LATERAL_ESQUERDO = 2
+    ZAGUEIRO = 3
+    VOLANTE = 4
+    MEIA = 5
+    ATACANTE = 6
 
     POSITIONS_CHOICES = (
         (GOLEIRO, 'Goleiro'),
         (LATERAL_DIREITO, 'Lateral direito'),
-        (LATERAL_ESQUERDO, 'Lateral esquerdo'),
+        (ZAGUEIRO, 'Zagueiro'),
+        (VOLANTE, 'Volante'),
+        (MEIA, 'Meia'),
+        (ATACANTE, 'Atacante'),
     )
 
     nome = models.CharField(u'Nome completo', max_length=200)
